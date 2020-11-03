@@ -1,5 +1,6 @@
 package es.jpargoteo.fibonacci.api.controller;
 
+import org.junit.Ignore;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import org.springframework.test.web.client.response.MockRestResponseCreators;
 
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 
+@Ignore
 @AutoConfigureMockRestServiceServer
 @WebAppConfiguration
 @RestClientTest(NumbersApiController.class)
